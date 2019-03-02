@@ -3,6 +3,49 @@
 <head>
 <title>유승훈 Quiz</title>
 <meta charset="utf-8">
+<style>
+body{
+  margin:0px
+}
+
+a {
+ color:black;
+ text-decoration: none;
+}
+
+h1 {
+  font-size: 250%;
+  text-align: center;
+  border-bottom:3px solid gray;
+  padding:20px;
+  margin:0px;
+  display:block;
+
+}
+#grid ol {
+  border-right:3px solid gray;
+  width:130px;
+  margin:0px;
+  padding:33px;
+}
+
+#grid{
+ display: grid;
+ grid-template-columns: 200px 1fr;
+}
+
+#article {
+ padding-left: 25px;
+}
+@media(max-width:760px){
+  #grid{
+    display: block;
+  }
+  #grid ol {
+    border-right:none;
+}
+
+</style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135462094-1"></script>
 <script>
@@ -16,6 +59,7 @@
 </head>
 <body>
   <h1><a href="index.html">유승훈</a></h1>
+  <div id="grid">
 <ol>
   <li><a href="1.html"> 유승훈의 친구</a></li>
   <li><a href="2.html"> 유승훈의 삶</a></li>
@@ -23,6 +67,7 @@
   <li><a href="4.html"> 유승훈 Quiz</a></li>
   <li><a href="5.html"> Quiz 정답</a></li>
 </ol>
+  <div id="article">
 <h2> 당신은 승훈이에 대해 얼마나 잘 아는가? </h2>
 <p> 승훈이는 키가 168cm 이다. Yes <input type="checkbox"> No <input type="checkbox"> </p>
 <p> 승훈이는 여자친구가 있다. Yes <input type="checkbox"> No <input type="checkbox"> </p>
@@ -75,5 +120,7 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
+</div>
+</div>
 </body>
 </html>
