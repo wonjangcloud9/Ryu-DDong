@@ -18,6 +18,36 @@
 </head>
 <body>
   <h1><a href="index.html">유승훈</a></h1>
+
+  <input type="button" value="주간모드" onclick="
+
+  var target = document.querySelector('body');
+  if(this.value === '야간모드'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = '주간모드';
+    var alist = document.querySelectorAll('a')
+    var i=0;
+    while(i<alist.length){
+    (alist[i]);
+    alist[i].style.color = 'powderblue';
+    i = i + 1;
+  }
+  }
+
+  else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간모드';
+    var alist = document.querySelectorAll('a')
+    var i=0;
+    while(i<alist.length){
+    (alist[i]);
+    alist[i].style.color = 'blue';
+    i = i + 1;
+}
+}
+  ">
   <div id=grid>
 <ol>
   <li><a href="1.html"> 유승훈의 친구</a></li>
